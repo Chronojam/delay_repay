@@ -146,5 +146,6 @@ class Train(object):
             claim,
             ))
 
+
 #Train(origin=sys.argv[1], destination=sys.argv[2])
-Train(origin=sys.argv[1], destination=sys.argv[2], date=datetime.date(2017, 3, 3))
+Train(origin=os.environ["TRAIN_ORIGIN"], destination=os.environ["TRAIN_DESTINATION"])
